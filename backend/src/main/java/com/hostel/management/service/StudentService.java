@@ -1,11 +1,24 @@
 package com.hostel.management.service;
 
-import com.hostel.management.dto.*;
-import com.hostel.management.entity.*;
+import com.hostel.management.dto.AttendanceMarkDto;
+import com.hostel.management.dto.LeaveApplyDto;
+import com.hostel.management.dto.ODApplyDto;
+import com.hostel.management.dto.OutingApplyDto;
+import com.hostel.management.dto.RequestHistoryDto;
+import com.hostel.management.dto.StudentDto;
+import com.hostel.management.entity.Attendance;
+import com.hostel.management.entity.LeaveRequest;
+import com.hostel.management.entity.OnDutyRequest;
+import com.hostel.management.entity.OutingRequest;
+import com.hostel.management.entity.Student;
 import com.hostel.management.enums.RequestStatus;
 import com.hostel.management.exception.BadRequestException;
 import com.hostel.management.exception.ResourceNotFoundException;
-import com.hostel.management.repository.*;
+import com.hostel.management.repository.AttendanceRepository;
+import com.hostel.management.repository.LeaveRequestRepository;
+import com.hostel.management.repository.OnDutyRequestRepository;
+import com.hostel.management.repository.OutingRequestRepository;
+import com.hostel.management.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
